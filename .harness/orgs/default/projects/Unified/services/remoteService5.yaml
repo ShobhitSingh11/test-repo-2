@@ -3,3 +3,21 @@ service:
   identifier: remoteService5
   orgIdentifier: default
   projectIdentifier: Unified
+  serviceDefinition:
+    spec:
+      manifests:
+        - manifest:
+            identifier: fr34
+            type: K8sManifest
+            spec:
+              store:
+                type: Github
+                spec:
+                  connectorRef: ShobhitGitConnector4
+                  gitFetchType: Branch
+                  paths:
+                    - 45gt45
+                  branch: r4g4
+              skipResourceVersioning: false
+              enableDeclarativeRollback: false
+    type: Kubernetes
