@@ -3,6 +3,8 @@ service:
   identifier: remoteService5
   orgIdentifier: default
   projectIdentifier: Unified
+  tags:
+    testst: ""
   serviceDefinition:
     spec:
       manifests:
